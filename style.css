@@ -1,0 +1,288 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+p{
+    font-family: roboto,arial;
+}
+body{
+   margin: 0px;
+   padding-top: 80px;
+   padding-left: 96px;
+   padding-bottom: 24px;
+   background-color: rgb(248, 248, 248);
+
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(202, 196, 196);
+    z-index: 100;
+    
+}
+
+.sidebar{
+    background-color: white;
+    position: fixed;
+    height: 600px;
+    left: 0px;
+    padding-top: 55px;
+    width: 70px;
+    bottom: 0px;
+    top: 0px;
+
+
+
+}
+.sidebar-link{
+ height: 76px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ 
+
+}
+.sidebar-link:hover{
+    background-color: lightgray;
+      
+
+}
+.sidebar-link img{
+    width: 24px;
+}
+.sidebar-link div{
+    font-family: roboto,arial;
+    font-size: 10px;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+}
+
+.humburger{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    
+    }
+    .youtube-logo{
+        height: 20px;
+    
+    }
+
+
+/* middle section */
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    width: 0;
+
+    
+
+}
+.search-bar{
+    flex: 1;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(172, 171, 171);
+    border-radius: 2px;
+}
+
+.search-icon{
+height: 40px;
+width: 66px;
+border: 1px;
+border-style: solid;
+border-color: rgb(198, 197, 197);
+border-radius: 2px;
+padding-top: 4px;
+margin-left: -1px;
+margin-right: 10px;
+
+
+
+}
+.search-icon-image{
+    height: 24px;
+    margin-top: 4px;
+
+}
+.voice-seacrh{
+    height: 44px;
+    width: 60px;
+    border-radius: 30px;
+    border: none;
+
+}
+.voice-serach-image{
+     height: 24px;
+
+}
+.search-bar::placeholder{
+    font-family: roboto Arial;
+    font-size: 16px;
+}
+
+
+.rigt-section{
+     width: 180px;
+     margin-right: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-shrink: 0;
+}
+
+.upload-icon{
+    height: 24px;
+
+}
+.youtube-apps-icon{
+    height: 24px;
+}
+.notification-icon{
+    height: 24px;
+
+
+}
+.chaannel-icon{
+    height: 30px;
+    border-radius: 17px;
+
+}
+.notification-icon-container{
+    position: relative;
+}
+.notification-count{
+    position: absolute;
+    top: 7px;
+    right: 68px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    font-size: 15px;
+    font-family: roboto,arial;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.vedio-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+.vedio-prewiv{
+    position: relative;
+    /* margin-top: 5px;
+    margin-left: 10px;
+   display: block; */
+}
+.vedio-image{
+    width: 100%;
+    /* position: relative; */
+    /* width: 300px; */
+    /* height: 200px; */
+    /* width: 50px; */
+}
+.channel-photo{
+    display: inline-block;
+    width: 40px;
+    vertical-align: top;
+    /* border-radius: 10px; */
+    
+   
+
+
+}
+.photo-profile{
+    border-radius: 50px;
+    margin-top: 12px;
+    vertical-align: top;
+    width: 40px;
+    margin-left: 10px;
+
+}
+.vedio-info{
+    display: inline-block;
+     width: 200px;
+    margin-left: 35px;
+    margin-top: 5px;
+    margin-right: 10px; 
+    /* display: grid;
+    grid-template-columns: 50px 1fr; */
+    
+}
+.channel-text{
+    /* display: inline-block; */
+    margin-top: 6px;
+   
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    
+    /* justify-content: center; */
+    /* line-height: 2.5; */
+    margin-right: 2px;
+    /* word-spacing: 0.2; */
+    /* width: 50px; */
+}
+.vedio-neme{
+    margin-top: 4px;
+    color: gray;
+    font-size: 12px;
+
+}
+.vedio-history{
+
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+.vedio-time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    right: 5px;
+    font-family: roboto,Arial;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border-radius: 2px;
+    
+}
